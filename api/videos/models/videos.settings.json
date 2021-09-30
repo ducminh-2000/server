@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "videos",
   "info": {
-    "name": "videos"
+    "name": "videos",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -25,6 +26,19 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "categories": {
+      "via": "videos",
+      "collection": "category",
+      "dominant": true
+    },
+    "creators": {
+      "via": "videos",
+      "collection": "creator",
+      "dominant": true
+    },
+    "name": {
+      "type": "string"
     }
   }
 }

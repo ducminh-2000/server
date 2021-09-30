@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "creators",
+  "info": {
+    "name": "Creator",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "videos": {
+      "via": "creators",
+      "collection": "videos"
+    }
+  }
+}
